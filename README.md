@@ -40,7 +40,7 @@ sudo a2ensite py
 sudo systemctl restart apache2
 ```
 
-Install PIP (optional)
+Install PIP (optional) and Set defaults to Python3
 ```sh
 sudo apt install python-pip
 sudo apt install python3-pip
@@ -53,7 +53,9 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 sudo update-alternatives --config python
 ```
 
-Choose either option 0 or 2 to use Python3.
+Choose either option 0 or 2 to use Python3 if one of those options are not
+already selected.
+
 ```sh
 There are 2 choices for the alternative python (providing /usr/bin/python).
 
