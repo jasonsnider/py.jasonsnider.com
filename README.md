@@ -40,9 +40,30 @@ sudo a2ensite py
 sudo systemctl restart apache2
 ```
 
-Set the environment to Python3
+Install PIP (optional)
 ```sh
-alias python=python3
+sudo apt install python-pip
+sudo apt install python3-pip
+```
+
+Use Python3
+```sh
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 0
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+sudo update-alternatives --config python
+```
+
+Choose either option 0 or 2 to use Python3.
+```sh
+There are 2 choices for the alternative python (providing /usr/bin/python).
+
+  Selection    Path              Priority   Status
+------------------------------------------------------------
+* 0            /usr/bin/python3   1         auto mode
+  1            /usr/bin/python2   0         manual mode
+  2            /usr/bin/python3   1         manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 0
 ```
 
 Navigate to [http://127.0.0.2](http://127.0.0.2)
