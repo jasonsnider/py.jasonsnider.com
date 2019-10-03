@@ -1,2 +1,2 @@
 # py.jasonsnider.com
-A Python version of jasonsnider.com.
+My personal website written in Python.
