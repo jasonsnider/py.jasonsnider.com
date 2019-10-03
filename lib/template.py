@@ -17,6 +17,7 @@ def input(title, body):
         <nav>
             <a href="/">Home</a>
             <a href="/resume.py">Resume</a>
+            <a href="/articles">Blog</a>
         </nav>
         {body}
     </body>
