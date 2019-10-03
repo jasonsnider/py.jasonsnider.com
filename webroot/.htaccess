@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.py -f
+RewriteRule !.*\.py$ %{REQUEST_FILENAME}.py [L]

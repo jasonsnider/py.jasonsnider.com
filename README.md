@@ -29,6 +29,7 @@ Add a virtual host file
     <Directory /var/www/py.jasonsnider.com/webroot>
         Options +ExecCGI
         DirectoryIndex index.py
+        AllowOverride All
     </Directory>
     AddHandler cgi-script .py
 </VirtualHost>
