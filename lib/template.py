@@ -14,7 +14,10 @@ def input(title, body):
         <title>{title}</title>
     </head>
     <body>
-        <h1>{title}</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/resume.py">Resume</a>
+        </nav>
         {body}
     </body>
 </html>\
