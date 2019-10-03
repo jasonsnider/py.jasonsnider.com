@@ -25,8 +25,8 @@ Add a virtual host file
 ```apache
 <VirtualHost 127.0.0.2:80>
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/py.jasonsnider.com
-    <Directory /var/www/py.jasonsnider.com>
+    DocumentRoot /var/www/py.jasonsnider.com/webroot
+    <Directory /var/www/py.jasonsnider.com/webroot>
         Options +ExecCGI
         DirectoryIndex index.py
     </Directory>

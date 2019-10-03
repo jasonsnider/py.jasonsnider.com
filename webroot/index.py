@@ -1,9 +1,12 @@
 #!/usr/bin/python
+import sys
+sys.path.append("..")
+
 import cgi
 import cgitb
 cgitb.enable()
 
-import template
+from lib import template
 
 title = 'Python Template Test'
 body = '<p>Sweet, sweet, PY!</p>'
