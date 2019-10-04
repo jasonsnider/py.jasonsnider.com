@@ -41,11 +41,8 @@ sudo a2ensite py
 sudo systemctl restart apache2
 ```
 
-Install PIP (optional) and Set defaults to Python3
-```sh
-sudo apt install python-pip
-sudo apt install python3-pip
-```
+Set defaults to Python3
+
 
 Use Python3
 ```sh
@@ -68,5 +65,24 @@ There are 2 choices for the alternative python (providing /usr/bin/python).
 
 Press <enter> to keep the current choice[*], or type selection number: 0
 ```
+
+Install PIP - I'm having some issue with PIP. Try installing both version.
+When running PIP results in an error regarding *cannot import name main* 
+Reinstalling seems to fix it.
+
+```sh
+sudo apt install python-pip
+sudo apt install python3-pip
+
+# If your having issues try to reinstall
+sudo python3 -m pip uninstall pip && sudo apt install python3-pip --reinstall
+```
+
+## Dependencies
+
+```sh
+sudo pip3 install pymysql
+```
+
 
 Navigate to [http://127.0.0.2](http://127.0.0.2)
