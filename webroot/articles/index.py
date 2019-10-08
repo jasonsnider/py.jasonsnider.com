@@ -17,7 +17,7 @@ articles = Articles()
 
 for r in articles.fetchArticles():
     body = body + '''\
-<a href="/articles/view/{slug}">
+<a href="/article/{slug}">
     <h2>{title}</h2>
     <p>{description}</p>
 </a><hr>\

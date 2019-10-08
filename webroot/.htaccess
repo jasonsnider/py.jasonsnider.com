@@ -1,3 +1,11 @@
 RewriteEngine On
+
+# Allow the omission of file names
 RewriteCond %{REQUEST_FILENAME}.py -f
-RewriteRule !.*\.py$ %{REQUEST_FILENAME}.py [L]
+RewriteRule !.*\.py$ %{REQUEST_FILENAME}.py
+
+# Pretty URLS
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^article/(.*)$ ./articles/view.py?slug=$1
